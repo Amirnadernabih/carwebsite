@@ -7,9 +7,7 @@
     .Aboutus {
       display: flex;
     }
-    .thirdsec{
-        display: flex;
-    }
+   
     .section3 a{
         display: flex;
         
@@ -44,6 +42,14 @@
     .section4text input{
         height: 25px;
     }
+    .aboutusimg{
+    width: 400px;
+    border-radius: 60px;
+}
+.section3{
+    margin-top: 150px;
+  
+}
   }
 
 
@@ -53,15 +59,25 @@
     .Aboutus {
       display: block;
     }
-    .thirdsec{
-        display: block;
-        margin: 30px;
-    }
+   
     .section4{
         display: none;
     }
+   .aboutusimg{
+    width: 200px;
+    border-radius: 60px;
+}
+.section3{
+    margin-top: 100px;
   
+}
+.section3 a{
+  display: flex;
+  
+  justify-content: center;
 
+ 
+}
     
   }
 
@@ -88,20 +104,13 @@
     gap: 60px;
     text-align: start;
 }
-.aboutusimg{
-    max-width: 400px;
-    min-width: 150px;
-    border-radius: 60px;
-}
+
 .thirdsec{
     
-    justify-content: center;
+  justify-content: center;
     gap: 100px;
 }
-.section3{
-    margin-top: 150px;
-  
-}
+
 
 
 
