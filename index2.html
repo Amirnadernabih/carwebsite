@@ -23,7 +23,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="contactus.html">contact us</a>
               </li>
-              
+             
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Collection
@@ -51,81 +51,95 @@
       Product Filter
     </div>
     <br class="filter">
-      <label for="category">Category:</label>
-      <select id="category">
-        <option value="VAN">VAN</option>
-        <option value="SEDAN">SEDAN</option>
-        <option value="SUV">SUV</option>
-      </select></br>
-
-      <label for="price">Price:</label>
-      <div class="range-filter">
-        <input type="number" id="minPrice" placeholder="Min Price">
-        <input type="number" id="maxPrice" placeholder="Max Price">
-      </div>
+    <label for="category">Category:</label>
+    <select id="category">
+      <option value="all">All</option>
+      <option value="VAN">VAN</option>
+      <option value="SEDAN">SEDAN</option>
+      <option value="SUV">SUV</option>
+    </select><br>
+ 
+    <label for="price">Price:</label>
+    <div class="range-filter">
+      <input type="number" id="minPrice" placeholder="Min Price">
+      <input type="number" id="maxPrice" placeholder="Max Price">
     </div>
-<div>
-    
+  </div>
+ 
+  <div>
     <button type="button" onclick="filter()" class="btn btn-dark">Search</button>
   </div>
-        
+
+ 
+       
 <section>
 
     <div class="container text-center">
         <div class="row align-items-start">
           <div class="col-lg-4 -md-4- sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2764.jpg" alt="Avatar" >
+            <div class="product" data-category="SEDAN" data-price="25000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2764.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2765.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2765.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes A180</h1>
+                    <p>Product Description</p>
+                    <p>Price: $25000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes A180</h1>
-                <p>Product Description</p>
-                <p>Price: $25000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
           <div class="col lg-4- md-4- sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2766.jpg" alt="Avatar" >
+            <div class="product" data-category="SEDAN" data-price="30000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2766.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2767.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2767.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes C180</h1>
+                    <p>Product Description</p>
+                    <p>Price: $30000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes C180</h1>
-                <p>Product Description</p>
-                <p>Price: $30000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+
+            
           </div>
           <div class="col lg-4- md-4- sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2768.jpg" alt="Avatar" >
+            <div class="product" data-category="SEDAN" data-price="35000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2768.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2769.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2769.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes E180</h1>
+                    <p>Product Description</p>
+                    <p>Price: $35000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes E180</h1>
-                <p>Product Description</p>
-                <p>Price: $35000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+
+            
           </div>
         </div>
       </div>
@@ -134,58 +148,67 @@
       <div class="container text-center">
         <div class="row align-items-start">
           <div class="col lg-4- md-4- sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2772.jpg" alt="Avatar" >
+            <div class="product" data-category="SEDAN" data-price="80000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2772.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2771.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2771.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes S600 Maybach</h1>
+                    <p>Product Description</p>
+                    <p>Price: $80000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes S600 Maybach</h1>
-                <p>Product Description</p>
-                <p>Price: $80000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
           <div class="col lg-4- md-4- sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2774.jpg" alt="Avatar" >
+            <div class="product" data-category="SUV" data-price="40000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2774.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2775.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2775.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes GLA180</h1>
+                    <p>Product Description</p>
+                    <p>Price: $40000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes GLA180</h1>
-                <p>Product Description</p>
-                <p>Price: $40000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+           
           </div>
           <div class="col lg-4- md-4- sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2776.jpg" alt="Avatar" >
+            <div class="product" data-category="SUV" data-price="45000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2776.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2777.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2777.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes GLC180</h1>
+                    <p>Product Description</p>
+                    <p>Price: $45000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes GLC180</h1>
-                <p>Product Description</p>
-                <p>Price: $45000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -194,58 +217,67 @@
       <div class="container text-center">
         <div class="row align-items-start">
           <div class="col-lg-4 -md-4- sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2778.jpg" alt="Avatar" >
+            <div class="product" data-category="SUV" data-price="50000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2778.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2779.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2779.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes GLE180</h1>
+                    <p>Product Description</p>
+                    <p>Price: $50000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes GLE180</h1>
-                <p>Product Description</p>
-                <p>Price: $50000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
           <div class="col-lg-4 -md-4 -sm-12">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\OIP.jpg" alt="Avatar" >
+            <div class="product" data-category="SUV" data-price="55000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\OIP.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2781.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2781.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes GLS180 Maybach</h1>
+                    <p>Product Description</p>
+                    <p>Price: $55000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes GLS180 Maybach</h1>
-                <p>Product Description</p>
-                <p>Price: $55000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
           <div class="col-lg-4 -md-4 -sm-12-">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2782.jpg" alt="Avatar" >
+            <div class="product" data-category="SUV" data-price="27500">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2782.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2783.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2783.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes B200</h1>
+                    <p>Product Description</p>
+                    <p>Price: $27500</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes B200</h1>
-                <p>Product Description</p>
-                <p>Price: $27500</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -254,49 +286,58 @@
       <div class="container text-center">
         <div class="row align-items-start">
           <div class="col-lg-4 -md-4 -sm-12">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2784.jpg" alt="Avatar" >
+            <div class="product" data-category="SEDAN" data-price="30000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2784.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2783.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2783.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Mercedes CLA180</h1>
+                    <p>Product Description</p>
+                    <p>Price: $30000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Mercedes CLA180</h1>
-                <p>Product Description</p>
-                <p>Price: $30000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
           <div class="col-lg-4 -md-4 -sm-12">
-            <div class="product-container">
-                <img src="exterior photos\IMG_2786.jpg" alt="Product Image">
-                <h1>Mercedes cabriolet</h1>
-                <p>Product Description</p>
-                <p>Price: $75000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            <div class="product" data-category="SEDAN" data-price="75000">
+                <div class="product-container">
+                    <img src="exterior photos\IMG_2786.jpg" alt="Product Image">
+                    <h1>Mercedes cabriolet</h1>
+                    <p>Product Description</p>
+                    <p>Price: $75000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
+                  </div>
+            </div>
+            
           </div>
           <div class="col-lg-4 -md-4- sm-12">
-            <div class="product-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="exterior photos\IMG_2788.jpg" alt="Avatar" >
+            <div class="product" data-category="VAN" data-price="65000">
+                <div class="product-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="exterior photos\IMG_2788.jpg" alt="Avatar" >
+                          </div>
+                          <div class="flip-card-back">
+                          <img src="interior photos\IMG_2789.jpg" alt="Avatar" >
+                          </div>
+                        </div>
                       </div>
-                      <div class="flip-card-back">
-                      <img src="interior photos\IMG_2789.jpg" alt="Avatar" >
-                      </div>
-                    </div>
+                    <h1>Merecedes Van</h1>
+                    <p>Product Description</p>
+                    <p>Price: $65000</p>
+                    <button><a href="checkout.html">Reserve it</a></button>
                   </div>
-                <h1>Merecedes Van</h1>
-                <p>Product Description</p>
-                <p>Price: $65000</p>
-                <button><a href="checkout.html">Reserve it</a></button>
-              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -304,19 +345,19 @@
 
 
 
-    
+   
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
-    
-      
+   
+     
       <!-- Right -->
     </section>
     <!-- Section: Social media -->
-  
+ 
     <!-- Section: Links  -->
     <section class="">
       <div class="container text-center text-md-start mt-5">
@@ -330,12 +371,12 @@
             </h6>
             <p>
                 Mercedes-Benz constantly strives to achieve the highest levels
-                of customer satisfaction and ensures that our customers always 
+                of customer satisfaction and ensures that our customers always
                 have the best-in-class experience with our products and services.
             </p>
           </div>
           <!-- Grid column -->
-  
+ 
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -348,10 +389,10 @@
             <p>
               <a href="#!" class="text-reset">Used Cars</a>
             </p>
-            
+           
           </div>
           <!-- Grid column -->
-  
+ 
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -369,7 +410,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+ 
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
@@ -388,24 +429,54 @@
       </div>
     </section>
     <!-- Section: Links  -->
-  
+ 
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
+      ©️ 2021 Copyright:
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">ENG/ AMIR NADER </a>
     </div>
     <!-- Copyright -->
    </footer>
   <!-- Footer -->
-  <script>
-    function filter() {
-      var category = document.getElementById("category").value;
-      var minPrice = document.getElementById("minPrice").value;
-      var maxPrice = document.getElementById("maxPrice").value;
 
-      // Filter the products
+
+
+
+
+
+  <script>
+   function filter() {
+    // Get the selected category
+    var category = document.getElementById("category").value;
+
+    // Get the minimum and maximum prices
+    var minPrice = document.getElementById("minPrice").value;
+    var maxPrice = document.getElementById("maxPrice").value;
+
+    // Convert the prices to numbers
+    minPrice = parseFloat(minPrice);
+    maxPrice = parseFloat(maxPrice);
+
+    // Get all the product elements
+    var products = document.getElementsByClassName("product");
+
+    // Loop through each product and hide/show based on the filter criteria
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+      var productCategory = product.getAttribute("data-category");
+      var productPrice = parseFloat(product.getAttribute("data-price"));
+
+      var categoryMatch = category === "all" || productCategory === category;
+      var priceMatch = isNaN(minPrice) || isNaN(maxPrice) || (productPrice >= minPrice && productPrice <= maxPrice);
+
+      if (categoryMatch && priceMatch) {
+        product.style.display = "block"; // Show the product
+      } else {
+        product.style.display = "none"; // Hide the product
+      }
     }
+  }
   </script>
-      
+     
 </body>
 </html>
